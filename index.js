@@ -13,9 +13,9 @@ function convert() {
     let inputValue = document.getElementById("input").value
     let displayEl=document.getElementById("display")
     
-    meterFeetEl.textContent+=Number((inputValue * 3.281).toFixed(2))
-    litersGallonsEl.textContent+=Number((inputValue * 0.264).toFixed(2))
-    kiloPoundsEl.textContent+=Number((inputValue * 2.204).toFixed(2))
+    meterFeetEl.textContent=Number((inputValue * 3.281).toFixed(2))
+    litersGallonsEl.textContent=Number((inputValue * 0.264).toFixed(2))
+    kiloPoundsEl.textContent=Number((inputValue * 2.204).toFixed(2))
     displayEl.textContent=`Converting ${inputValue}`
     document.getElementById("input").value=null
   
